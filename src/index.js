@@ -10,7 +10,7 @@ import EmployeeList from './EmployeeList';
 ReactDOM.render(<Tick name="priyank" />, document.getElementById('root'));
 //ReactDOM.render(elemet, document.getElementById('root'));
 
-const list = [{name: 'p', age: 20}, {name: 'q', age: 40}];
+const list = [{name: 'priyank', age: 34}, {name: 'namdeo', age: 4}];
 
 ReactDOM.render(<EmployeeList employees={list}/>, document.getElementById('root'));
 
