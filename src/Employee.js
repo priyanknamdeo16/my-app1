@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 class Employee extends Component {
     constructor(props) {
-        debugger;
         super(props);
     }
 

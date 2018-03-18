@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import Tick from './Tick';
 import registerServiceWorker from './registerServiceWorker';
 import EmployeeList from './EmployeeList';
+import Clock from './Clock';
 
 //const elemet = <h1>hey sguys</h1>;
 ReactDOM.render(<Tick name="priyank" />, document.getElementById('root'));
@@ -14,7 +15,20 @@ ReactDOM.render(<Tick name="priyank" />, document.getElementById('root'));
 const list = [{name: 'priyank', age: 20}, {name: 'namdeo', age: 40}];
 
 
-ReactDOM.render(<EmployeeList employees={list}/>, document.getElementById('root'));
+//ReactDOM.render(<EmployeeList employees={list}/>, document.getElementById('root'));
+
+
+//clock App
+function ClockApp(props) {
+    return (
+        <div>
+            <Clock/>
+            <Clock/>
+        </div>
+    );
+}
+ReactDOM.render(<ClockApp/>, document.getElementById('root'));
+
 
 //functional components returning from function -> this.props.name dont work
 // function Sara(props) {
