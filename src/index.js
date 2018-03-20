@@ -7,6 +7,10 @@ import registerServiceWorker from './registerServiceWorker';
 import EmployeeList from './EmployeeList';
 import Clock from './Clock';
 
+import MyEvent from './MyEvent';
+import Temprature from './Temprature';
+import Calculator from './Calculator';
+
 //const elemet = <h1>hey sguys</h1>;
 ReactDOM.render(<Tick name="priyank" />, document.getElementById('root'));
 //ReactDOM.render(elemet, document.getElementById('root'));
@@ -27,7 +31,9 @@ function ClockApp(props) {
         </div>
     );
 }
-ReactDOM.render(<ClockApp/>, document.getElementById('root'));
+//ReactDOM.render(<MyEvent/>, document.getElementById('root'));
+
+ReactDOM.render(<Calculator/>, document.getElementById('root'));
 
 
 //functional components returning from function -> this.props.name dont work
